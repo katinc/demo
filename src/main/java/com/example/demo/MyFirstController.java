@@ -12,10 +12,10 @@ public class MyFirstController {
         return a + b;
     }
 
-    @RequestMapping("/sub/{a}/{b}")
-    @ResponseBody public int sub(@PathVariable ("a") int a, @PathVariable("b") int b){
-        return a - b;
-    }
+//    @RequestMapping("/sub/{a}/{b}")
+//    @ResponseBody public int sub(@PathVariable ("a") int a, @PathVariable("b") int b){
+//        return a - b;
+//    }
 
     @RequestMapping("/div/{a}/{b}")
     @ResponseBody public double divide(@PathVariable ("a") int a, @PathVariable("b") int b){
