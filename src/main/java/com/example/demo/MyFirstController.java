@@ -26,4 +26,9 @@ public class MyFirstController {
     @ResponseBody public int multiply(@PathVariable ("a") int a, @PathVariable("b") int b){
         return a * b;
     }
+
+    @RequestMapping("/mod/{a}/{b}")
+    @ResponseBody public int mod(@PathVariable ("a") int a, @PathVariable("b") int b){
+        return a % b;
+    }
 }
